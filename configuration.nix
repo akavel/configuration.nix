@@ -46,7 +46,10 @@
   #   nixos-rebuild dry-activate # build & simulate switch (may be incomplete)
   #   nixos-rebuild test         # build & switch OS, but don't set boot default
   #   nixos-rebuild switch       # build & switch OS & set boot default
+  #   https://nixos.org/nixpkgs/manual  # how to develop and contribute to NixOS packages
+  #   nix-store -q --tree /nix/var/nix/profiles/system  # list installed pkgs and their dependencies; https://nixos.org/wiki/Cheatsheet
   #   nix-store -q --references /var/run/current-system/sw | cut -d- -f2- | sort | less   # list installed NixOS packages; https://nixos.org/wiki/Install/remove_software#How_to_list_installed_software
+  #   nix-channel --add https://nixos.org/channels/nixos-unstable nixos   # bleeding edge; enables command-not-found, reportedly? https://github.com/NixOS/nixpkgs/issues/12044
 
   # List services that you want to enable:
 
