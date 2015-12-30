@@ -66,10 +66,10 @@
   # services.xserver.desktopManager.kde4.enable = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
-  # users.extraUsers.guest = {
-  #   isNormalUser = true;
-  #   uid = 1000;
-  # };
+  users.extraUsers.akavel = {
+    isNormalUser = true;
+    uid = 1000;
+  };
 
   # The NixOS release to be compatible with for stateful data such as databases.
   system.stateVersion = "15.09";
