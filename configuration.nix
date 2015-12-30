@@ -32,9 +32,10 @@
 
   # List packages installed in system profile. To search by name, run:
   # $ nix-env -qaP | grep wget
-  # environment.systemPackages = with pkgs; [
+  environment.systemPackages = with pkgs; [
+      vim
   #   wget
-  # ];
+  ];
 
   # List services that you want to enable:
 
