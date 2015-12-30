@@ -38,6 +38,15 @@
       pkgs.gnupg
   #   wget
   ];
+  # NOTE(akavel): notes to self:
+  #   nix-env -qaP --description  # list all available pkgs
+  #   nix-env --dry-run -i git    # dependencies of a pkg
+  #   nixos-rebuild dry-build    # do not build
+  #   nixos-rebuild build        # build only (generates link named 'result')
+  #   nixos-rebuild dry-activate # build & simulate switch (may be incomplete)
+  #   nixos-rebuild test         # build & switch OS, but don't set boot default
+  #   nixos-rebuild switch       # build & switch OS & set boot default
+  #   nix-store -q --references /var/run/current-system/sw | cut -d- -f2- | sort | less   # list installed NixOS packages; https://nixos.org/wiki/Install/remove_software#How_to_list_installed_software
 
   # List services that you want to enable:
 
